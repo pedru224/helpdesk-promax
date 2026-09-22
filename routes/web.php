@@ -29,4 +29,3 @@ Route::delete('/tickets/{ticket}', [TicketController::class, 'destroy'])
     ->name('tickets.destroy');
 
 
-
