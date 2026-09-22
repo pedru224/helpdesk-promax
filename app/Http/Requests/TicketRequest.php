@@ -24,7 +24,7 @@ class TicketRequest extends FormRequest
     {
         return [
             'title' => ['required','string','min:5','max:150'],
-            'department_id' => ['required','integer','exists:departments_id'],
+            'department_id' => ['required','integer','exists:departments,id'],
             'requester_name' => ['required','string','min:3','max:100'],
             'priority' => ['required','in:Baixa,Média,Alta,Urgente'],
             'description' => ['required','string','min:10','max:2000'],
